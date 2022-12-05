@@ -6,7 +6,7 @@
   "author": "Nazutte <78427046+Nazutte@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tailwind build -i tailwind/main.css -o ui/css/tailwind.css",
+    "build": "tailwind build -i ui/css/main.css -o ui/css/tailwind.css",
     "watch": "yarn build -w"
   },
   "dependencies": {
