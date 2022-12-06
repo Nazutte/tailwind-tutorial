@@ -1,3 +1,5 @@
+@config "../config/tailwind.config.js";
+
 /*
 ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
 */
@@ -419,7 +421,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -466,7 +468,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -513,20 +515,32 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.inline-flex {
+.inline-flex{
   display: inline-flex;
 }
 
-.h-8 {
+.h-8{
   height: 2rem;
 }
 
-body {
+.h-3{
+  height: 0.75rem;
+}
+
+.h-6{
+  height: 1.5rem;
+}
+
+.items-center{
+  align-items: center;
+}
+
+body{
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-.nav-bar {
+.nav-bar{
   display: flex;
   width: 100%;
   align-items: center;
@@ -537,7 +551,7 @@ body {
   padding-right: 1.25rem;
 }
 
-.nav-item {
+.nav-item{
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 1.25rem;
@@ -552,7 +566,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-.nav-item:hover {
+.nav-item:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
