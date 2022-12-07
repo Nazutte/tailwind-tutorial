@@ -9,7 +9,15 @@ body {
 }
 
 .nav-bar {
-  @apply bg-slate-800 flex w-full px-5 items-center justify-between;
+  @apply bg-slate-800 flex w-full px-2 items-center justify-between;
+}
+
+.logo {
+  @apply h-8 px-4;
+}
+
+.nav-ul {
+  @apply inline-flex;
 }
 
 .nav-item {
