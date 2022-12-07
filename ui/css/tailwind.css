@@ -1,3 +1,5 @@
+@config "../config/tailwind.config.js";
+
 /*
 ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
 */
@@ -419,7 +421,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -466,7 +468,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -513,12 +515,15 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-body {
+body{
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
-.nav-bar {
+.nav-bar{
   display: flex;
   width: 100%;
   align-items: center;
@@ -529,45 +534,93 @@ body {
   padding-right: 0.5rem;
 }
 
-.logo {
+.logo{
   height: 2rem;
   padding-left: 1rem;
   padding-right: 1.5rem;
 }
 
-.nav-ul {
+.nav-ul{
   display: inline-flex;
   align-items: center;
 }
 
-.nav-item {
+.nav-item{
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  font-weight: 600;
   text-transform: uppercase;
-  --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-.nav-item:hover {
+.nav-item:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
-.icon-config {
+.user-icon{
   height: 3.5rem;
   padding: 1rem;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-.icon-config:hover {
+.user-icon:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
+.search-bar{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+}
+
+.search-icon{
+  height: 2.5rem;
+  padding: 0.75rem;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.search-icon:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.search--bar{
+  width: 100vw;
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-weight: 500;
+}
+
+.search--bar:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.search-button{
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.search-button:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
