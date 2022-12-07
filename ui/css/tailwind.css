@@ -532,11 +532,12 @@ body {
 .logo {
   height: 2rem;
   padding-left: 1rem;
-  padding-right: 1rem;
+  padding-right: 1.5rem;
 }
 
 .nav-ul {
   display: inline-flex;
+  align-items: center;
 }
 
 .nav-item {
@@ -555,6 +556,18 @@ body {
 }
 
 .nav-item:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
+.icon-config {
+  height: 3.5rem;
+  padding: 1rem;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.icon-config:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }

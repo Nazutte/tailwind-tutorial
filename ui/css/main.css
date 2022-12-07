@@ -13,14 +13,19 @@ body {
 }
 
 .logo {
-  @apply h-8 px-4;
+  @apply h-8 pl-4 pr-6;
 }
 
 .nav-ul {
-  @apply inline-flex;
+  @apply inline-flex items-center;
 }
 
 .nav-item {
   @apply text-slate-200 px-4 py-5 uppercase font-semibold text-sm;
+  @apply hover:bg-slate-700 ease-in duration-200; 
+}
+
+.icon-config {
+  @apply h-14 p-4;
   @apply hover:bg-slate-700 ease-in duration-200; 
 }
