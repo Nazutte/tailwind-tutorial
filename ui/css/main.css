@@ -4,12 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-slate-900 text-slate-200 font-semibold;
+.main {
+  @apply bg-slate-900 text-slate-200 font-semibold h-screen overflow-hidden;
 }
 
 .nav-bar {
-  @apply bg-slate-800 flex w-full px-2 items-center justify-between;
+  @apply bg-slate-800 flex w-full px-2 items-center justify-between whitespace-nowrap;
 }
 
 .logo {
@@ -23,6 +23,10 @@ body {
 .nav-item {
   @apply px-4 py-5 uppercase text-sm;
   @apply hover:bg-slate-700 ease-in duration-200; 
+}
+
+.drop-down-icon {
+  @apply h-4 pl-3;
 }
 
 .user-icon {
@@ -40,7 +44,7 @@ body {
 }
 
 .search--bar {
-  @apply bg-slate-600 font-medium w-screen px-3;
+  @apply bg-slate-600 font-medium placeholder:italic w-full px-3;
   @apply focus:outline-none;
 }
 
