@@ -5,11 +5,11 @@
 @tailwind utilities;
 
 .main {
-  @apply bg-slate-900 text-slate-200 font-semibold h-screen;
+  @apply bg-slate-900 text-slate-200 font-semibold h-screen overflow-x-hidden;
 }
 
 .nav-bar {
-  @apply bg-slate-800 flex w-full px-2 items-center justify-between whitespace-nowrap;
+  @apply bg-slate-800 flex w-full items-center justify-between whitespace-nowrap;
 }
 
 .logo {
@@ -31,7 +31,7 @@
 
 .user-icon {
   @apply h-14 p-4;
-  @apply hover:bg-slate-700 ease-in duration-200; 
+  @apply hover:p-3 ease-in duration-200;
 }
 
 .search-bar {
