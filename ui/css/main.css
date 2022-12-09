@@ -9,7 +9,7 @@
 }
 
 .nav-bar {
-  @apply bg-slate-800 flex w-full overflow-x-auto items-center justify-between whitespace-nowrap;
+  @apply bg-slate-800 flex w-full overflow-x-auto items-center justify-between whitespace-nowrap flex-wrap;
 }
 
 .logo {
