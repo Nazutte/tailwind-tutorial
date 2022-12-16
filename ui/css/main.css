@@ -30,8 +30,8 @@
 }
 
 .user-icon {
-  @apply h-14 p-4;
-  @apply hover:p-3 ease-in duration-200;
+  @apply h-14 p-3 self-center;
+  @apply hover:p-2 ease-in duration-200;
 }
 
 .search-bar {
