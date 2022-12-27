@@ -13,30 +13,52 @@
             <div class="nav-bar">
                 <img class="logo" src="public/logo/logo-white.png">
 
-                <ul class="nav-ul">
+                <div class="search-bar mobile-visible-all md:absolute">
+                    <img class="search-icon" src="public/icons/magnifying-glass-solid.svg">
+                    <input class="search--bar" type="search" placeholder="Search">
+                    <button class="search-button">search</button>
+                </div>
+
+                <ul class="nav-ul desktop-visible-all max-md:absolute">
                     <li class="nav-item">home</li>
                     <li class="nav-item">about me</li>
                     <li class="nav-item">clients</li>
                     <li class="nav-item">3d models</li>
-                    <li class="nav-item nav-ul">others<img class="drop-down-icon" src="public/icons/caret-down-solid.svg"> </li>
+                    <li class="nav-item nav-ul items-center">
+                        <p>others</p>
+                        <img class="drop-down-icon" src="public/icons/caret-down-solid.svg">
+                    </li>
                 </ul>
 
-                <div class="nav-ul">
+                <div class="nav-ul desktop-visible-all max-md:absolute">
                     <ul class="nav-ul">
                         <li class="nav-item">sign up</li>
                         <li class="nav-item">sign in</li>
                     </ul>
-                    <img class="user-icon" src="public/icons/circle-user-solid.svg">
+                    <img class="user-icon desktop-visible-all" src="public/icons/circle-user-solid.svg">
+                </div>
+
+                <div id="hamburger-toggle" class="mobile-visible-all md:absolute">
+                    <img class="bar-icon" src="public/icons/bars-solid.svg">
                 </div>
             </div>
 
-            <!-- SEARCH BAR -->
-            <div class="search-bar">
-                <img class="search-icon" src="public/icons/magnifying-glass-solid.svg">
+            <ul id="hamburger-menu" class="hamburger-menu">
+                <li class="hamburger-item"><img class="h-5" src="public/icons/house-solid.svg"> <p class="pl-2">home</p></li>
+                <li class="hamburger-item"><img class="h-5" src="public/icons/scroll-solid.svg"> <p class="pl-2">about me</p></li>
+                <li class="hamburger-item"><img class="h-5" src="public/icons/people-group-solid.svg"> <p class="pl-2">clients</p></li>
+                <li class="hamburger-item"><img class="h-5" src="public/icons/palette-solid.svg"> <p class="pl-2">3d models</p></li>
+                <li class="hamburger-item"><img class="h-5" src="public/icons/puzzle-piece-solid.svg"> <p class="pl-2">others</p></li>
+            </ul>
 
+            <!-- SEARCH BAR -->
+            <div class="search-bar desktop-visible-all max-md:absolute">
+                <img class="search-icon" src="public/icons/magnifying-glass-solid.svg">
                 <input class="search--bar" type="search" placeholder="Search">
                 <button class="search-button">search</button>
             </div>
         </div>
     </body>
+
+    <script src="scripts/main.js"></script>
 </html>

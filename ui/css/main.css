@@ -4,12 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
+.desktop-visible-all * {
+  @apply max-md:hidden;
+}
+
+.mobile-visible-all * {
+  @apply md:hidden;
+}
+
 .main {
-  @apply bg-slate-900 text-slate-200 font-semibold h-screen;
+  @apply bg-slate-900 text-slate-200 font-semibold h-screen overflow-x-scroll;
 }
 
 .nav-bar {
-  @apply bg-slate-800 flex w-full overflow-x-auto items-center justify-between whitespace-nowrap flex-wrap;
+  @apply bg-slate-800 flex w-full items-center justify-between whitespace-nowrap flex-wrap max-md:flex-nowrap;
 }
 
 .logo {
@@ -35,7 +43,8 @@
 }
 
 .search-bar {
-  @apply bg-slate-600 flex lg:pl-3 items-center justify-start;
+  @apply bg-slate-600 flex flex-row items-center justify-start flex-grow;
+  @apply lg:pl-3;
 }
 
 .search-icon {
@@ -44,11 +53,42 @@
 }
 
 .search--bar {
-  @apply bg-slate-600 font-medium placeholder:italic w-full px-3;
+  @apply bg-slate-600 font-medium placeholder:italic px-3;
   @apply focus:outline-none;
+  @apply w-full;
 }
 
 .search-button {
   @apply uppercase font-bold text-xs p-3 bg-slate-700;
   @apply hover:bg-slate-800;
+}
+
+.bar-icon {
+  @apply h-16 max-sm:p-2 sm:p-4;
+}
+
+.hamburger-menu {
+  @apply h-0 overflow-hidden;
+  @apply duration-300;
+  @apply flex flex-col justify-center items-center;
+  @apply md:hidden;
+}
+
+.hamburger-menu-show {
+  @apply bg-slate-600;
+  @apply h-52 overflow-hidden;
+  @apply duration-300;
+  @apply flex flex-col justify-center items-center;
+  @apply md:hidden;
+}
+
+.hamburger-item {
+  @apply uppercase text-xs;
+  @apply flex justify-center items-center;
+  @apply w-full h-10;
+}
+
+.hamburger-item:hover {
+  @apply bg-slate-700;
+  @apply duration-200;
 }
